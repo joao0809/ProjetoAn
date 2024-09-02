@@ -1,4 +1,7 @@
-import { Routes } from '@angular/router';
+import { NgModule} from '@angular/core' ;
+import { PreloadAllModules,Routes, RouterModule } from '@angular/router';
+import { HomePage } from './home/home.page';
+
 
 export const routes: Routes = [
   {
