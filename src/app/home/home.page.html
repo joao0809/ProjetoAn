@@ -1,32 +1,23 @@
 <ion-header>
   <ion-toolbar>
-  <ion-title>Cálculo de Gasolina para alcool</ion-title>
+  <ion-title>
+    POKEAPI
+  </ion-title>
   </ion-toolbar>
-  </ion-header>
-  <ion-content>
-  <ion-row class="linha">
-  <ion-col size-sm="12" size-md="6">
-  <ion-card class="cardFundo">
-  <ion-card-content class="card">
-  <ion-list>
-  <ion-item>
-  <ion-label position="floating">Gasolina</ion-label>
-  <ion-input type="number" [(ngModel)]="Gasolina"></ion-input>
-  </ion-item>
-  <ion-item>
-  <ion-label position="floating">Alcool</ion-label>
-  <ion-input type="number" [(ngModel)]="Alcool"></ion-input>
-  </ion-item>
-  <ion-button class="btn" expand="block" fill="outline"(click)="calcularGasolina()">Calcular gasolina para alcool</ion-button>
-  <ion-item>
-  <ion-label position="floating">Situação</ion-label>
-  <ion-input [value]="situacao" readonly></ion-input>
-  </ion-item>
-  </ion-list>
-  </ion-card-content>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header> 
+      <ion-card-title>
+        Buscar Pokemon
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-input label="Digite o nome do Pokémon" type="text" labelPlacement="floating" [(ngModel)]="nome"></ion-input>
+      <ion-button (click)="verificar()">
+        Verificar
+      </ion-button>
+    </ion-card-content>
   </ion-card>
-  </ion-col>
-  </ion-row>
-  </ion-content>
-  <ion-footer>
-  </ion-footer>
+</ion-content>
